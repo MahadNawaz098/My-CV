@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahad Nawaz — CV</title>
+  <style>
+    :root {
+      --bg: #f3f4f6;
+      --card: #ffffff;
+      --accent: #2563eb;
+      --text-main: #1f2937;
+      --text-muted: #6b7280;
+      --border: #e5e7eb;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text-main);
+      display: flex;
+      justify-content: center;
+      padding: 40px 0;
+    }
+
+    .cv-container {
+      width: 900px;
+      background: var(--card);
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      position: relative;
+    }
+
+    header {
+      text-align: center;
+      background: linear-gradient(135deg, #e8eefc, #f7faff);
+      padding: 40px 20px 60px;
+      position: relative;
+    }
+
+    header .avatar {
+      width: 100px;
+      height: 100px;
+      background: var(--accent);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+      color: #fff;
+      font-weight: bold;
+      margin: 0 auto 20px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      color: var(--text-main);
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      font-weight: normal;
+      color: var(--accent);
+      margin-top: 6px;
+    }
+
+    .contact {
+      text-align: center;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-top: 8px;
+      line-height: 1.6;
+    }
+
+    .download-btn {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      background: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 18px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background: #1d4ed8;
+    }
+
+    .section {
+      padding: 30px 40px;
+      border-top: 1px solid var(--border);
+    }
+
+    .section h3 {
+      color: var(--accent);
+      font-size: 1.1rem;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #eef2ff;
+      color: #1e40af;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      margin: 4px 6px 0 0;
+      font-weight: 500;
+    }
+
+    .card {
+      background: #f9fafb;
+      padding: 20px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      margin-top: 10px;
+    }
+
+    .project-title {
+      font-weight: bold;
+      color: var(--text-main);
+      font-size: 1rem;
+    }
+
+    .footer {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      padding: 20px;
+      border-top: 1px solid var(--border);
+      background: #f9fafb;
+    }
+
+    .highlight {
+      color: var(--accent);
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      .cv-container {
+        width: 95%;
+      }
+      .section {
+        padding: 20px;
+      }
+    }
+
+    /* Hide download button when printing */
+    @media print {
+      .download-btn {
+        display: none;
+      }
+      body {
+        background: white;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="cv-container">
+    <button class="download-btn" onclick="window.print()">⬇️ Download CV</button>
+
+    <header>
+      <div class="avatar">MN</div>
+      <h1>Mahad Nawaz</h1>
+      <h2>Web Developer • Student</h2>
+      <div class="contact">
+        📧 mahadnawaz911@gmail.com <br />
+        📍 Karachi, Pakistan <br />
+        🌐 github.com/MahadNawaz098
+      </div>
+    </header>
+
+    <div class="section">
+      <h3>Education</h3>
+      <ul>
+        <li><strong>9th Grade</strong> — Completed</li>
+        <li><strong>10th Grade (Computer Science)</strong> — In Progress (Expected 2026)</li>
+        <li><strong>Bahria College Majeed EAB-1</strong></li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>Experience</h3>
+      <ul>
+        <li><strong>Student Projects & Assignments</strong> — 2024–Present</li>
+        <li>Developed responsive websites using HTML, CSS, and JavaScript.</li>
+        <li>Utilized Git & GitHub Desktop for version control and collaboration.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>Skills</h3>
+      <div class="skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Git</span>
+        <span>Linux</span>
+        <span>Bootstrap</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>Highlights</h3>
+      <div class="card">
+        <div class="project-title">Personal Portfolio</div>
+        <p>Designed a personal website to showcase my projects, focusing on modern layouts and accessibility.</p>
+      </div>
+      <div class="card">
+        <div class="project-title">Interactive Tables Project</div>
+        <p>Built clean and dynamic HTML/CSS tables emphasizing simplicity and structure.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>About Me</h3>
+      <p>
+        I’m passionate about <span class="highlight">modern web development</span> and love learning technologies that help build beautiful, functional, and fast websites.  
+        I aim to grow as a front-end developer while contributing to impactful projects.
+      </p>
+    </div>
+
+    <div class="footer">
+      © 2025 Mahad Nawaz — Designed & Coded with ❤️ in Karachi
+    </div>
+  </div>
+
+  <script>
+    // Optional: alert after printing for feedback
+    window.onafterprint = () => alert("Your CV has been saved or printed successfully!");
+  </script>
+</body>
+</html>
